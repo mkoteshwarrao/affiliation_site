@@ -1,0 +1,82 @@
+[{
+    "category": "automation robotics",
+    "url": "automation_robotics.json"
+}, {
+    "category": "automotive",
+    "url": "automotive.json"
+}, {
+    "category": "baby care",
+    "url": "baby_care.json"
+}, {
+    "category": "bags wallets belts",
+    "url": "bags_wallets_belts.json"
+}, {
+    "category": "beauty personal care",
+    "url": "beauty_personal_care.json"
+}, {
+    "category": "cameras and accessories",
+    "url": "cameras_and_accessories.json"
+}, {
+    "category": "clothing",
+    "url": "clothing.json"
+}, {
+    "category": "computers",
+    "url": "computers.json"
+}, {
+    "category": "food nutrition",
+    "url": "food_nutrition.json"
+}, {
+    "category": "footwear",
+    "url": "footwear.json"
+}, {
+    "category": "furniture",
+    "url": "furniture.json"
+}, {
+    "category": "gaming",
+    "url": "gaming.json"
+}, {
+    "category": "home decor",
+    "url": "home_decor.json"
+}, {
+    "category": "home entertainment",
+    "url": "home_entertainment.json"
+}, {
+    "category": "home furnishing",
+    "url": "home_furnishing.json"
+}, {
+    "category": "home improvement",
+    "url": "home_improvement.json"
+}, {
+    "category": "home kitchen",
+    "url": "home_kitchen.json"
+}, {
+    "category": "jewellery",
+    "url": "jewellery.json"
+}, {
+    "category": "kitchen dining",
+    "url": "kitchen_dining.json"
+}, {
+    "category": "mobiles and accessories",
+    "url": "mobiles_and_accessories.json"
+}, {
+    "category": "pens stationery",
+    "url": "pens_stationery.json"
+}, {
+    "category": "sports fitness",
+    "url": "sports_fitness.json"
+}, {
+    "category": "sunglasses",
+    "url": "sunglasses.json"
+}, {
+    "category": "tools hardware",
+    "url": "tools_hardware.json"
+}, {
+    "category": "toys school supplies",
+    "url": "toys_school_supplies.json"
+}, {
+    "category": "watches",
+    "url": "watches.json"
+}, {
+    "category": "wearable smart devices",
+    "url": "wearable_smart_devices.json"
+}]
