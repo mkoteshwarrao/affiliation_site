@@ -1,2 +1,2 @@
-var app = angular.module("app", ['ui.router','mgcrea.ngStrap.modal']);
+var app = angular.module("app", ['ngRoute','mgcrea.ngStrap.modal']);
 

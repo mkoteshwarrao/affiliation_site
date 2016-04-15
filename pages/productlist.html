@@ -1,16 +1,16 @@
-<div class="row cat">
-    <div class="container-fluid col-lg-12">
-        <a ng-repeat="i in data" ng-click="showProduct(i)">
-            <span><h6>{{i.category+" , "}}</h6></span>
-        </a>
-    </div>
-</div>
 <div class="container">
+    <div class="row cat">
+        <div class="col-sm-12">
+            <a ng-repeat="i in data" ng-click="showProduct(i)">
+                <span><h6>{{i.category+" , "}}</h6></span>
+            </a>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-4 bsdiv" ng-repeat="item in products">
             <a href='{{item.url}}'>{{ item.title}}</a>
             <br>
-            <a href='{{item.url}}'>
+            <a ng-click="showDetails(item)">
                 <img ng-src="{{item.imgLow}}" height="100 px" />
             </a>
             <br> {{item.title}}

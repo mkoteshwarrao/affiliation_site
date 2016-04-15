@@ -12,7 +12,6 @@
         </div>
     </nav>
 </div-->
-
 <!--div class="container">
     
     <nav class="navbar navbar-default">
@@ -40,10 +39,10 @@
         
     </nav>
 </div-->
-
- <div class="row cat">
-            <div class="container-fluid col-lg-12">
-                <a ng-repeat="i in data" ng-click="showProduct(i)">
-                    <span><h6>{{i.category+" , "}}</h6></span>
-                </a>
-            </div>
+<div class="row">
+    <div class="container-fluid">
+        <a ng-repeat="i in data" ng-click="showProduct(i)">
+            <span><h6>{{i.category+" , "}}</h6></span>
+        </a>
+    </div>
+</div>

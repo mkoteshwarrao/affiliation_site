@@ -1,6 +1,7 @@
 app.service('productsService', ['$http', '$q', function($http, $q) {
 
     var products = {};
+    var category = {};
     
     var deferObject,
         myMethods = {
@@ -27,7 +28,7 @@ app.service('productsService', ['$http', '$q', function($http, $q) {
 
 
             getProduct: function(value) {
-                var promise = $http.get('data/products.json'),
+                var promise = $http.get(category),
                     deferObject = deferObject || $q.defer();
 
                 promise.then(
@@ -36,7 +37,7 @@ app.service('productsService', ['$http', '$q', function($http, $q) {
 
                         angular.forEach(res.data.products, function(item) {
 
-                            if (item.id == value) {
+                            if (item.title == value) {
 
                                 deferObject.resolve(item);
 

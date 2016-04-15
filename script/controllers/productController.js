@@ -1,8 +1,10 @@
-app.controller('productController', ['$scope', '$modal', '$http', 'productsService',
+app.controller('productController', ['$scope', '$routeParams','$modal', '$http', 'productsService',
 
-    function productController($scope, $modal, $http, productsService) {
+    function productController($scope,$routeParams, $modal, $http, productsService) {
 
         $scope.data = {};
+        $scope.productId = $routeParams.productId || null;
+
 
         $scope.products = {};
         $scope.myModal = $scope.myModal | {};
@@ -34,9 +36,33 @@ app.controller('productController', ['$scope', '$modal', '$http', 'productsServi
         );
 
 
-        $scope.showDetails = function(value) {
+        $scope.carousel = productsService.getProducts("data/home_improvement.json");
 
-            $scope.getProduct = productsService.getProduct(value);
+        $scope.carousel.then(
+
+            function(data) {
+                $scope.carouseldata = data.data;
+            },
+
+            function(reason) {
+
+            }
+        );
+
+
+        $scope.showDetails = function(item) {
+
+            $scope.item = item;
+                    $scope.myModal = $modal({
+                        scope: $scope,
+                        templateUrl: 'pages/pdetails.html',
+                        show: true,
+                        backdrop: 'static'
+                    });
+
+            $scope.myModal.$promise.then($scope.myModal.show);
+            
+            /*$scope.getProduct = productsService.getProduct(value);
             $scope.getProduct.then(
 
                 function(item) {
@@ -55,7 +81,7 @@ app.controller('productController', ['$scope', '$modal', '$http', 'productsServi
                 function(reason) {
 
                 }
-            );
+            );*/
         };
 
         $scope.hideModal = function() {

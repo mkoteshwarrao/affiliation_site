@@ -1,9 +1,9 @@
 app.controller('productDetailsController',
 
-    ['$scope', '$stateParams', 'productsService',
-        function productDetailsController($scope, $stateParams, productsService) {
+    ['$scope', '$routeParams', 'productsService',
+        function productDetailsController($scope, $routeParams, productsService) {
 
-            $scope.productId = $stateParams.productId;
+            $scope.productId = $routeParams.productId;
 
             $scope.getProduct = productsService.getProduct($scope.productId);
 
